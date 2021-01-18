@@ -51,7 +51,7 @@ this list shall be migrated there, so we can discuss these one-by-one.
 * Gather user feedback on the existing infrastructure: Where are the pain
   points? What would our community like to see improved?
 * Migration of all python scripts and tools to Python 3 as Python 2 is
-  deprecated.
+  deprecated (already in progress).
 * Reach out to downstream infrastructure teams (e.g. Rust, Tensorflow) and
   understand if we have infrastructure topics we want to cooperate on.
 * Define Service Level Objectives (SLO) for our infrastructure and monitor
@@ -72,3 +72,4 @@ this list shall be migrated there, so we can discuss these one-by-one.
 * Decide what to do with the mailing lists and GDPR deletion requests.
 * Decide if we want to have mandatory pre-merge testing and what it should
   look like.
+* Migrate bug tracker to GitHub issues (already in progress).
