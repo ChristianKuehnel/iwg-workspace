@@ -48,6 +48,9 @@ this list shall be migrated there, so we can discuss these one-by-one.
     CI checks passes on `main`. So `green` is only a few commits behind `main`,
     no direct pushes, not cherry-picking. This branch cen be used for cases
     where people prefere stability over the latest version.
+  * For all LLVM repos using GitHub Pull Requests: check if we can easily set
+    up pre-merge tests using GitHub Actions. 
+    [LNT](https://github.com/llvm/llvm-lnt) is a good candidate.
 * Gather user feedback on the existing infrastructure: Where are the pain
   points? What would our community like to see improved?
 * Migration of all python scripts and tools to Python 3 as Python 2 is
