@@ -73,10 +73,12 @@ this list shall be migrated there, so we can discuss these one-by-one.
 * Decide if we want to have mandatory pre-merge testing and what it should
   look like.
 * Migrate bug tracker to GitHub issues (already in progress).
-* Figure out, where we could use more/better documentation or traning material (e.g. tutorials, videos).
+* Figure out, where we could use more/better documentation or traning material
+  (e.g. tutorials, videos).
 * Roll out clang-tidy and clang-format for new/modified code to all repositories. 
   * Configure rules for the projects.
   * Set up pre-merge and post-merge checks to find (new) voilations.
   * Set up dashboard and metrics to visualize improvements over time.
   * Maybe also do a one-shot re-formatting of theentire codebase.
-* Create (moderated) for communication within and beyond the community: Announcement of news, stories from users, success stories, ...
+* Create (moderated) blog for communication within and beyond the community:
+  Announcement of news, stories from users, success stories, ...
