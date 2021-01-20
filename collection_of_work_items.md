@@ -79,3 +79,4 @@ this list shall be migrated there, so we can discuss these one-by-one.
   * Set up pre-merge and post-merge checks to find (new) voilations.
   * Set up dashboard and metrics to visualize improvements over time.
   * Maybe also do a one-shot re-formatting of theentire codebase.
+* Create (moderated) for communication within and beyond the community: Announcement of news, stories from users, success stories, ...
