@@ -85,3 +85,5 @@ this list shall be migrated there, so we can discuss these one-by-one.
   * Maybe also do a one-shot re-formatting of theentire codebase.
 * Create (moderated) blog for communication within and beyond the community:
   Announcement of news, stories from users, success stories, ...
+* Review configurations of all tools, check who has admin access and update
+  these premissions where needed.
