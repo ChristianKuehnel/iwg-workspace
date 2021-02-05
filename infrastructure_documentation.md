@@ -21,7 +21,8 @@ There are several tools used for communication.
 - integrations:
   - see [IRC](https://llvm.org/docs/GettingInvolved.html#irc)
 - Ideas:
-  - Do we have an integration with Discord?
+  - Do we have an integration with Discord?  
+    [discord-irc](https://github.com/reactiflux/discord-irc) seems to be useful.
 - Current challenges:
   - N/A
 
@@ -53,7 +54,9 @@ There are several tools used for communication.
 - TODO: add URL and instructions for joning
 - use case: interactive chats between community members
   - somewhat redundant to Slack and IRC
-- TODO: do we have an integration with IRC?
+- TODO: do we have an integration with IRC?  
+  here also [discord-irc](https://github.com/reactiflux/discord-irc) seems to be
+  useful.
 
 ## Slack
 
