@@ -1,8 +1,8 @@
-# Documentation of the project infrastructure
+# Survey of existing project infrastructure
 
 The set of tools used by the LLVM project are it's *infrastructure*. This page
 contains an overview of the existing tools, what they are used for and a contact
-for each of these.
+for each of these.  The purpose of this document is to establish an initial survey of what we're working with, not to be exhastive.  We hope to document individual pieces and workflows in detail at a later time.  
 
 The [Getting Involved](http://llvm.org/docs/GettingInvolved.html) page
 explains the intended workflows for using these tools.
@@ -200,3 +200,31 @@ technologies.
 ## Content Delivery Network (CDN)
 
 - TODO
+
+## test case reduction
+
+- bugpoint
+- llvm-reduce
+- c-reduce (external tool, but heavily used)
+- delta (external tool, but heavily used)
+
+## practical formal reasoning
+
+[Alive2][https://github.com/AliveToolkit/alive2] is an external effort to build tooling around formal semenatics for LLVM IR.  It is being used extensively validate InstCombine transforms before submission, and (less extensively) to isolate which transform is miscompiling.  It's also being used to drive efforts to improve the specification of poison and undef in the LangRef.
+
+## external testing and revert to green
+
+As a project, we rely heavily on external testing of ToT to ensure quality via bisection and revert-to-greeen.  A few of particular note:
+
+- Google's weekly build with new ToT compiler finds a lot.  The hashes of previously builds are available (where?) and are consumed by others as a defacto "recent stable" series.
+- See Green Dragon above.
+- https://llvm-compile-time-tracker.com - ongoing effort to track and actively revert changes which impact compile time negatively.  Contact: Nikita Popov?
+- Nuno Lopes and his team maintains a [dashboard][https://web.ist.utl.pt/nuno.lopes/alive2/] of currently failing LLVM tests related to the ongoing efforts to formalize poison/undef.
+- Fuzzing efforts
+
+  - Google's OSS Fuzz
+  - Azul runs a [java fuzzer][https://github.com/AzulSystems/JavaFuzzer] which finds a lot of miscompiles.
+  - [clang-triage][https://github.com/sliedes/clang-triage] - externally developed, doesn't appear to still be active
+  - to be continued...
+  
+Running these efforts are probably mostly out of scope for the working group, but supporting them w/ e.g. bisection and reduction tooling is not.  We should probably also establish point of contacts for each if they're going to be reverting lots of changes upstream.
