@@ -7,11 +7,10 @@ repo to plan our work and document the things we want to remember.
 
 ## Contents
 
+* [Working group overview](https://foundation.llvm.org/docs/infrastructure-wg/)
 * [Kanban board](https://github.com/ChristianKuehnel/iwg-workspace/projects/1)
-* [ideas for work items](https://github.com/ChristianKuehnel/iwg-workspace/blob/main/collection_of_work_items.md)
+* [ideas for work items](collection_of_work_items.md)
 * [Infrastructure documentation](infrastructure_documentation.md)
-* TODO: add link to Foundation page, once the
-  [PR](https://github.com/llvm/llvm-foundation-www/pull/3) is merged.
 
 ## Contact
 
