@@ -1,11 +1,24 @@
 # Documentation of the project infrastructure
 
 The set of tools used by the LLVM project are it's *infrastructure*. This page
-contains an overivew of the existing tools, what they are used for and a contact
+contains an overview of the existing tools, what they are used for and a contact
 for each of these.
 
 The [Getting Involved](http://llvm.org/docs/GettingInvolved.html) page
 explains the intended workflows for using these tools.
+
+<!-- 
+Template for new infrastructure components 
+
+### (Name of component)
+
+- Description: 
+- Most important workflows:
+- Admin contact: 
+- Hosted at:
+- Integrations:
+- 
+-->
 
 ## Communication
 
@@ -26,45 +39,55 @@ There are several tools used for communication.
 - Current challenges:
   - N/A
 
-## Mailing lists
+### Mailing lists
 
 - see [Mailing Lists](https://llvm.org/docs/GettingInvolved.html#mailing-lists>)
 - Dedicated [Mailman](http://www.gnu.org/software/mailman/index.html) instance
 - hosted at TODO
 - administrated by TODO
-- use cases: asynchronus communication of the community and code reviews
+- use cases: asynchronous communication of the community and code reviews
   - somewhat redundant to Discourse
 - ideas:
   - Maybe integrate with Discourse?
 - Current challenges:
   - Difficult to realize GDPR deletion requests
 
-## Discourse
+### Discourse
 
 - [llvm.discourse.group/](https://llvm.discourse.group/)
 - hosted service
 - `Admins <https://llvm.discourse.group/about>`_
-- use case: asynchronus communication of the community
+- use case: asynchronous communication of the community
   - somewhat redundant to the mailing lists.
 - Integrations:
   - Github for single sign on
 
-## Discord
+### Discord
 
-- TODO: add URL and instructions for joning
+- Join the group with this [invitation](https://discord.gg/xS7Z362)
 - use case: interactive chats between community members
   - somewhat redundant to Slack and IRC
+- Admins: See discord -> Server settings -> Members -> filter for admins
 - TODO: do we have an integration with IRC?  
   here also [discord-irc](https://github.com/reactiflux/discord-irc) seems to be
   useful.
+- Integrations:
+  - [BuildBot status](https://discord.com/channels/636084430946959380/646265759823167498/666582633706291200)
+  - Github commits
+  - YouTube
+  - Twitter
 
-## Slack
+### Slack
 
 - [llvm.slack.com](https://llvm.slack.com)
 - hosted service
 - administrated by TODO
 - use case: interactive chats between board and ops team
   - somewhat redundant to IRC and Discord
+
+### Twitter
+
+- [@llvm.org](https://twitter.com/llvmorg)
 
 ## Source Code Repository
 
@@ -74,14 +97,15 @@ There are several tools used for communication.
 - administrated by TODO
 - use case: storing/versioning of the project source code
 - Integrations:
-  - display buildbot status
+  - display BuildBot status
   - Email notifications
 
 ## Code reviews
 
+### Phabricator
+
 - Code reviews for `llvm-project` and some other projects are performed in
   [Phabricator](https://reviews.llvm.org/) and on the mailing lists.
-  - Some other projects are using GitHub PullRequests.
 - Phabricator is hosted on Google Cloud
 - Administrated by TODO
 - Integrations:
@@ -90,9 +114,14 @@ There are several tools used for communication.
   - Triggering builds on pre-merge testing
   - sending Emails on mailing list
 
+### GitHub Pull Requests
+
+- Some projects are using Pull Requests for code reviews.
+- Native feature of GitHub, does not need hosting or administration.
+
 ## Build infrastructure
 
-The project is using multipe build systems with different scopes and
+The project is using multiple build systems with different scopes and
 technologies.
 
 ### Build bots
@@ -114,11 +143,13 @@ technologies.
 ### Pre-merge testing
 
 - use case: pre-merge testing of patches on Phabricator
-- TODO: link to github page
 - Integrations
   - Phabricator to get patches and show results
   - Github repository to get sources
   - Buildkite to run the builds
+- Links:
+  - Github project [google/llvm-premerge-checks](https://github.com/google/llvm-premerge-checks/)
+  - [Buildkite project](https://buildkite.com/llvm-project)
 
 ### LLVM GN buildbot
 
@@ -131,8 +162,9 @@ technologies.
 
 - [lnt.llvm.org](http://lnt.llvm.org)
 - Nightly tests, measuring performance and code size
+- Hosted on Google Cloud
 - Current challenges:
-  - is looking for new maintianer
+  - is looking for new maintainer
 
 ## Bug Tracker
 
@@ -144,19 +176,21 @@ technologies.
 ## Build Systems
 
 - The official build system is *CMake*.
-- other, unsopported build systems:
+- other, unsupported build systems:
   - [gn](https://github.com/llvm/llvm-project/tree/master/llvm/utils/gn)
-  - Support for bazel currently in discussion.
+  - Support for Bazel currently in discussion.
 
 ## Test tooling
 
 ### Unit testing
 
-- using google test
+- using [googletest](https://github.com/google/googletest)
 
 ### LIT
 
-- home-grown testing framework
+- home-grown testing framework [LIT](https://llvm.org/docs/CommandGuide/lit.html)
+- included in the 
+   [LLVM monorepo](https://github.com/llvm-mirror/llvm/tree/master/utils/lit)
 
 ## Web sites
 
