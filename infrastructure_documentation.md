@@ -80,7 +80,7 @@ There are several tools used for communication.
 ### Slack
 
 - [llvm.slack.com](https://llvm.slack.com)
-- hosted service
+- hosted service, not clear if this is public vs foundation board resource
 - administrated by TODO
 - use case: interactive chats between board and ops team
   - somewhat redundant to IRC and Discord
@@ -91,6 +91,8 @@ There are several tools used for communication.
 
 ## Source Code Repository
 
+### Git and Github
+
 - Multiple repositories hosted on [GitHub](http://github.com/llvm/)
   - most prominent: the [LLVM Monorepo](https://github.com/llvm/llvm-project)
 - Hosted service by GitHub
@@ -99,8 +101,19 @@ There are several tools used for communication.
 - Integrations:
   - display BuildBot status
   - Email notifications
+  
+### Legacy SVN
+
+- Does the legacy SVN repo still exist?  If so, what is it being used for?
+- Do we want a historical archive, either active or offline?
 
 ## Code reviews
+
+We probably need a master list of which sub-projects are using each mechanism.
+
+### On the mailing lists
+
+- Per the [documentation][https://llvm.org/docs/CodeReview.html], we allow code review by email on llvm-commits and cfe-commits.
 
 ### Phabricator
 
@@ -113,6 +126,7 @@ There are several tools used for communication.
   - Reading data from Github
   - Triggering builds on pre-merge testing
   - sending Emails on mailing list
+  - processing email responses (major enhancement)
 
 ### GitHub Pull Requests
 
@@ -132,6 +146,7 @@ technologies.
 - [Production server](http://lab.llvm.org:8011/), sending emails
 - [Staging server](http://lab.llvm.org:8014/), no email notifications, for
   testing purposes.
+- We really need an index of active bots, and points of contact for each.
 
 ### Green dragon
 
@@ -228,3 +243,19 @@ As a project, we rely heavily on external testing of ToT to ensure quality via b
   - to be continued...
   
 Running these efforts are probably mostly out of scope for the working group, but supporting them w/ e.g. bisection and reduction tooling is not.  We should probably also establish point of contacts for each if they're going to be reverting lots of changes upstream.
+
+## code analysis reports
+
+* https://llvm.org/reports/scan-build/
+* https://llvm.org/reports/coverage/ (out of date)
+* https://scan.coverity.com/projects/llvm (*very* out of date)
+
+It's unclear who owns these, or how they're generated.
+
+## packages and distribution
+
+Various distributions package LLVM, we may want to document tooling and assumptions around that.
+
+https://apt.llvm.org/ provides "nightly" LLVM packages.  Unclear how widely this is used.  It does appear to be actively maintained.  See section on technical details towards end of page.
+
+
