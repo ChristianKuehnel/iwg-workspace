@@ -211,6 +211,8 @@ technologies.
 
 - llvm.org
 - foundation.llvm.org
+- community-dot-o.llvm.org
+- blog.llvm.org
 
 ## Content Delivery Network (CDN)
 
