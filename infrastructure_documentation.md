@@ -213,6 +213,13 @@ technologies.
 - foundation.llvm.org
 - community-dot-o.llvm.org
 - blog.llvm.org
+- mlir.llvm.org
+- clang.llvm.org
+- lldb.llvm.org
+- clangd.llvm.org
+- reviews.llvm.org
+- bugs.llvm.org
+- circt.llvm.org
 
 ## Content Delivery Network (CDN)
 
