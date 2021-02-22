@@ -271,3 +271,7 @@ https://apt.llvm.org/ provides "nightly" LLVM packages.  Unclear how widely this
 * Contact: Sylvestre Ledru
 * Last time @ChristianKuehnel talked to the Sylvestre, there were no usage metrics available.
 
+# Google Workspace
+
+[Google Workspace](https://workspace.google.com/) is in the LLVM foundation to manage mailing lists
+(e.g. iwg@llvm.org) and to collaborate on documents. This is not used in the LLVM community.
