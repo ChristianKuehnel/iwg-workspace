@@ -220,10 +220,11 @@ technologies.
 - reviews.llvm.org
 - bugs.llvm.org
 - circt.llvm.org
+- releases.llvm.org
 
 ## Content Delivery Network (CDN)
 
-- TODO
+Binaries/releases are distributed by [Fastly](https://www.fastly.com/).
 
 ## test case reduction
 
@@ -265,6 +266,8 @@ It's unclear who owns these, or how they're generated.
 
 Various distributions package LLVM, we may want to document tooling and assumptions around that.
 
-https://apt.llvm.org/ provides "nightly" LLVM packages.  Unclear how widely this is used.  It does appear to be actively maintained.  See section on technical details towards end of page.
+https://apt.llvm.org/ provides "nightly" LLVM packages.  Unclear how widely this is used.  It does appear to be actively maintained.  See section on technical details towards end of page. 
 
+* Contact: Sylvestre Ledru
+* Last time @ChristianKuehnel talked to the Sylvestre, there were no usage metrics available.
 
