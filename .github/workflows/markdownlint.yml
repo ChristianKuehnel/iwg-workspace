@@ -16,6 +16,7 @@ jobs:
 
     - name: install markdownlint-cli
       run: |
+        sudo apt-get update       
         sudo apt-get install npm
         npm install markdownlint-cli
 
