@@ -10,7 +10,7 @@ repo to plan our work and document the things we want to remember.
 * [Working group overview](https://foundation.llvm.org/docs/infrastructure-wg/)
 * [Kanban board](https://github.com/ChristianKuehnel/iwg-workspace/projects/1)
 * [ideas for work items](collection_of_work_items.md)
-* [Infrastructure documentation](infrastructure_documentation.md)
+* [Infrastructure survey](infrastructure_survey.md)
 
 ## Contact
 
