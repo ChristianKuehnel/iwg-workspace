@@ -11,6 +11,7 @@ repo to plan our work and document the things we want to remember.
 * [Kanban board](https://github.com/ChristianKuehnel/iwg-workspace/projects/1)
 * [ideas for work items](collection_of_work_items.md)
 * [Infrastructure survey](infrastructure_survey.md)
+* [Workflow survey](workflow_survey.md)
 
 ## Contact
 
