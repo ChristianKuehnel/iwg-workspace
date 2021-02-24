@@ -235,7 +235,7 @@ Binaries/releases are distributed by [Fastly](https://www.fastly.com/).
 
 ## practical formal reasoning
 
-[Alive2][https://github.com/AliveToolkit/alive2] is an external effort to build tooling around formal semenatics for LLVM IR.  It is being used extensively validate InstCombine transforms before submission, and (less extensively) to isolate which transform is miscompiling.  It's also being used to drive efforts to improve the specification of poison and undef in the LangRef.
+(Alive2)[https://github.com/AliveToolkit/alive2] is an external effort to build tooling around formal semenatics for LLVM IR.  It is being used extensively validate InstCombine transforms before submission, and (less extensively) to isolate which transform is miscompiling.  It's also being used to drive efforts to improve the specification of poison and undef in the LangRef.
 
 ## external testing and revert to green
 
